@@ -1,0 +1,147 @@
+
+// Terminal (Windows powershell)
+
+1.  ls = for list view of all the files.
+
+2.  cd = for change directory.
+   cd "js projects"  = have to use string if the filename has space.
+
+3.  cd ../ = for one step back.
+  (cd ../../ = for two steps back)
+
+4.  cd .\Acer\Downloads\ = for two steps in. cd space folder name folder name.
+
+5.  mkdir hello = to make/create a directory named hello.
+
+6.  rm hello = to remove/delete the hello file.
+
+7.  pwd for print working directory.
+
+8.  code .  for open file in vs-code.
+
+9.  mv folder_name folder_name = for rename folder.
+
+10.  mv file_name file_name ./folder_name = for moving files from one to another folder.
+
+11.  touch index.html style.css script.js  =  for create multiple files.
+
+
+// Git commands  // Git day-1  --------->>>>>>>>>>>>
+
+
+// git init   // git initialization
+
+// git add file_name   // add single file by file_name
+
+// git add .    // add all files
+
+// git status   // to know the add status
+
+// git commit -m "commit msg"   // to commit
+
+// git log   // to view all the added commits
+
+// git log --all   // to view all the commits of all the branches
+
+// git log --all --oneline   // to view in compact form
+
+// git checkout git-log-id   // to go to previous version
+
+// git checkout master   // to go to the current version/master branch
+
+// git branch    // to know all the branches of the repository
+
+// git branch branch_name     // to create new branch 
+
+// git checkout branch_name    //  switch one branch to another branch
+
+// git branch --delete branch_name   // to delete branch
+
+// git merge branch_name   // to marge one branch with another
+
+
+// set remote connection //
+
+// git remote show origin   // to check our repository is connected online or not
+
+// git remote add origin https://github.com/subham055/repository_name.git   // to set online remote connection
+
+// git branch -M main   // change branch name to main
+
+// git push -u origin main   // push codes to main branch
+
+
+// git fetch   // and // git merge origin/main  //-->> to fetch commit from online to local
+
+// git pull   // combination of git fetch + git merge
+
+
+// commit delete/reset //
+
+// git reset --hard commit_id   // to reset the commit (before push to gitHub). from git log --oneline we can find commit_id. here the commit id will be the commit where we want to go/move. all the commits between that will be deleted. here all the changes of html/css/js file will be deleted.
+
+// git reset --soft commit_id   // here the all changes of html/css/js file will move to staged section then we have to move them to changes section manually then have to discard.
+
+// git reset --mixed commit_id or git reset commit_id  //  here the all changes of html/css/js file will move to changes section and then we have to discard.
+
+
+// Restorer commit delete //
+
+// git reflog  // to view previous removed commit_ids
+
+// git reset --hard commit_id  // to restore removed commits and changes
+
+// git checkout head~1   // to move head 1 step behind
+
+
+// github pushed commit revert //
+
+// git revert commit_id   // commit id will be the id which is need to revert
+
+
+// git revert --no commit head~3..head0   // from head~0 to head~2 commits will be reverted and moved to staged area.  ==>  then if we continue the revert then type= git revert --continue   ==>  if we cancel the revert then type= git revert --abort  
+
+
+// abort merge //
+
+// git merge --abort   //  conflict not resolved. just hide/remove the merging status to do other work.
+
+
+//  git stash // 
+
+// git stash -m "stash msg"  // to move the extra code to stash 
+
+// git stash list  // to show the changes stored to stash
+
+// git stash apply 0   // to apply the stash files // 0 = 0th index of stash list 
+
+// git stash drop 0   // to remove the stash after apply
+
+// git stash clear  // to clear the whole stash 
+
+
+//  cherry-pick // ==> to merge some particular commit
+
+// git cherry-pick selected_commit_id   // to marge selected commit with other branch
+
+
+// .gitignore  //
+
+// git rm --cached file_name  // to delete file from git history. after that git will not track this file. it also works after push to github.
+
+// git rm --cached -r folder_name  // to delete folder from git history. it also works after push to github.
+
+
+//  git clone  // 
+
+/ git clone github_link 
+
+// git remote   then update then push  then contribute 
+
+
+//  to sync fork  //
+
+// git remote add base github_link
+
+// git fetch 
+
